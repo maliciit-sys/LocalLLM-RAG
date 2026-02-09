@@ -1,0 +1,54 @@
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environment ──────────────────────────
+venv/
+ml-env/
+.venv/
+env/
+
+# ── Environment & Secrets ────────────────────────
+.env
+config/settings.yaml
+
+# ── Data (large files) ──────────────────────────
+data/raw/*
+data/processed/*
+*.csv
+*.sqlite
+*.db
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ── Jupyter Notebooks ───────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── IDE ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Model files (large) ─────────────────────────
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# ── OS ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ────────────────────────────────────────
+*.log
+logs/
